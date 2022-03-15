@@ -11,7 +11,7 @@ it("responds with details about the currentuser", async () => {
       email: "test@test.com",
       password: "password",
     })
-    .expect(200);
+    .expect(400);
 
   expect(response.body.currentUser.email).toEqual("test@test.com");
 });
